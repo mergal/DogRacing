@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 
-#define NUMBEROFDOGS 10
+#define NUMBEROFDOGS 5
 #define NUMBEROFPLAYERS 5
 
 using namespace std;
@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
 
 		for (int i = 0; i < NUMBEROFPLAYERS; ++i)
 			people[i].claimWinnings(&winner);
-		sleep(5);
+		sleep(3);
 		for (int i = 0; i < NUMBEROFDOGS; ++i)
 			dogs[i].Rest();
 

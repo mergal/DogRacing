@@ -23,7 +23,7 @@ void Person::init()
 Person::Person()
 {
 	static int amountOfNames = (init(), names.size());
-	_name=names[rand()%6];
+	_name=names[rand()%amountOfNames];
 	_money=500;
 	_stupidity=rand()%101;
 	_courage=rand()%101;
