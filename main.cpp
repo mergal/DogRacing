@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
 		betting(people,dogs);
 		sleep(1);
 		Dog winner = race(dogs,laps);
-
+		sleep(1);
 		cout << "Zwycięzcą wyścigu został pies nr "<< winner.id() << "\n";
 
 		for (int i = 0; i < NUMBEROFPLAYERS; ++i)
@@ -57,15 +57,15 @@ int main(int argc, char const *argv[])
 
 Dog race(Dog* raceDogs, int laps)
 {
+	int winner=0;
 	double results[NUMBEROFDOGS]={0} , best = 100000;
 	for (int i = 0; i < laps; ++i)
 	{
 		cout<<"**************OKRĄŻENIE NR "<< i+1<<"***************\n";
 		for (int j = 0; j < NUMBEROFDOGS; ++j)
 			results[j] += raceDogs[j].Run();
+		sleep(1);
 	}
-
-	int winner=0;
 
 	for (int i = 0; i < NUMBEROFDOGS; ++i)
 	{

@@ -22,7 +22,6 @@ double Dog::Run()
 	if(rand() % 101 < _fatigue)
 	{
 		cout<<"Pies nr "<<_id<<" odczuwa poważne zmęczenie\n";
-		usleep(500000);
 		result*=2;
 		_fatigue-= rand()%16;
 		return result;
