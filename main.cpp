@@ -117,9 +117,9 @@ void betting(Person*men,Dog* dog)
 		if(rand() % 101 < men[i].stupidity())
 			men[i].bet(&dog[rand() % NUMBEROFDOGS], (rand() % 24000+1000)/100.0 );
 		else if(men[i].prudence()<20)
-			men[i].bet(&dog[rand() % NUMBEROFDOGS-1], (rand() % (200*men[i].courage()) + 1000)/100.0);
+			men[i].bet(&dog[rand() % (NUMBEROFDOGS -1)], (rand() % (200*men[i].courage()) + 1000)/100.0);
 		else if(men[i].prudence()<50)
-			men[i].bet(&dog[rand() % NUMBEROFDOGS-3], (rand() % (200*men[i].courage()) + 1000)/100.0);
+			men[i].bet(&dog[rand() % (NUMBEROFDOGS -3)], (rand() % (200*men[i].courage()) + 1000)/100.0);
 		else if(men[i].prudence()<80)
 			men[i].bet(&dog[rand() % 3], (rand() % (200*men[i].courage()) + 1000)/100.0);
 		else
