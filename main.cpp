@@ -8,7 +8,6 @@
 #include <unistd.h>
 #include <vector>
 #include <stack>
-#include <queue>
 
 
 #define NUMBEROFDOGS 8
